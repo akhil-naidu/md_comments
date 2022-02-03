@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"আফতাবুজ্জামান"
+		]
+	},
+	"md_comments.comment": "মন্তব্য",
+	"md_comments.comments": "মন্তব্য",
+	"md_comments.show_comments": "মন্তব্য দেখান",
+	"md_comments.comments_template.comment.value": "মন্তব্য",
+	"md_comments.comments_template.cancel.value": "বাতিল",
+	"md_comments.comments_template.reply.value": "উত্তর দিন",
+	"md_comments.comments_template.reply.placeholder": "উত্তর দিন",
+	"md_comments.comments_template.edit_comment.save": "সংরক্ষণ",
+	"md_comments.comments_template.edit_comment.cancel": "বাতিল"
+}

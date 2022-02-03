@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"DDPAT"
+		]
+	},
+	"md_comments.comment": "Коментар",
+	"md_comments.comments": "Коментарі",
+	"md_comments.add_comment.title": "Додати новий коментар до вибору",
+	"md_comments.add_comment": "Додати новий коментар до вибору",
+	"md_comments.add_comment.hint": "Будь ласка, спочатку виберіть текст для коментування",
+	"md_comments.delete_comment.title": "Видалити цей коментар",
+	"md_comments.edit_comment.title": "Редагувати цей коментар",
+	"md_comments.show_comments": "Показати коментарі",
+	"md_comments.comments_template.suggested_change": "Запропонована зміна",
+	"md_comments.comments_template.from": "Від",
+	"md_comments.comments_template.accept_change.value": "Прийняти зміну",
+	"md_comments.comments_template.revert_change.value": "Скасувати зміни",
+	"md_comments.comments_template.suggested_change_from": "Пропонована зміна з «{{changeFrom}}» на «{{changeTo}}»",
+	"md_comments.comments_template.suggest_change_from": "Запропонувати зміну з «{{changeFrom}}» на",
+	"md_comments.comments_template.to": "Кому:",
+	"md_comments.comments_template.include_suggestion": "Включити запропоновану зміну",
+	"md_comments.comments_template.comment.value": "Коментар",
+	"md_comments.comments_template.cancel.value": "Скасувати",
+	"md_comments.comments_template.reply.value": "Відповісти",
+	"md_comments.comments_template.reply.placeholder": "Відповісти",
+	"md_comments.comments_template.edit_comment.save": "зберегти",
+	"md_comments.comments_template.edit_comment.cancel": "скасувати",
+	"md_comments.error.edit_unauth": "Ви не можете редагувати коментарі інших користувачів!",
+	"md_comments.error.delete_unauth": "Ви не можете видаляти коментарі інших користувачів!"
+}

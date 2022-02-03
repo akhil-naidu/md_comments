@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Antonla",
+			"Saederup92"
+		]
+	},
+	"md_comments.comment": "Kommentar",
+	"md_comments.comments": "Kommentarer",
+	"md_comments.add_comment.title": "Tilføj ny kommentar ved markering",
+	"md_comments.add_comment": "Tilføj ny kommentar ved markering",
+	"md_comments.add_comment.hint": "Marker venligst først teksten for at kommentere",
+	"md_comments.delete_comment.title": "Slet denne kommentar",
+	"md_comments.edit_comment.title": "Rediger denne kommentar",
+	"md_comments.show_comments": "Vis kommentarer",
+	"md_comments.comments_template.suggested_change": "Foreslået ændring",
+	"md_comments.comments_template.from": "Fra",
+	"md_comments.comments_template.accept_change.value": "Godkend ændring",
+	"md_comments.comments_template.revert_change.value": "Fortryd ændring",
+	"md_comments.comments_template.suggested_change_from": "Foreslået ændring fra \"{{changeFrom}}\" til \"{{changeTo}}\"",
+	"md_comments.comments_template.suggest_change_from": "Foreslå ændring fra \"{{changeFrom}}\" til",
+	"md_comments.comments_template.to": "Til",
+	"md_comments.comments_template.include_suggestion": "Inkluder foreslået ændring",
+	"md_comments.comments_template.comment.value": "Kommentar",
+	"md_comments.comments_template.cancel.value": "Annuller",
+	"md_comments.comments_template.reply.value": "Svar",
+	"md_comments.comments_template.reply.placeholder": "Svar",
+	"md_comments.comments_template.edit_comment.save": "gem",
+	"md_comments.comments_template.edit_comment.cancel": "annuller",
+	"md_comments.error.edit_unauth": "Du kan ikke redigere andre brugeres kommentarer!",
+	"md_comments.error.delete_unauth": "Du kan ikke slette andre brugeres kommentarer!"
+}

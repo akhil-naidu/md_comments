@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"md_comments.comment": "Iruzkina",
+	"md_comments.comments": "Iruzkinak",
+	"md_comments.add_comment.title": "Gehitu iruzkin berria hautapenari",
+	"md_comments.add_comment": "Gehitu iruzkin berria hautapenari",
+	"md_comments.add_comment.hint": "Aukeratu ezazu lehenengo iruzkina gehitzeko testua",
+	"md_comments.delete_comment.title": "Ezabatu iruzkin hau",
+	"md_comments.edit_comment.title": "Editatu iruzkin hau",
+	"md_comments.show_comments": "Erakutsi iruzkinak",
+	"md_comments.comments_template.suggested_change": "Proposatutako aldaketa",
+	"md_comments.comments_template.from": "Jatorria",
+	"md_comments.comments_template.accept_change.value": "Onartu aldaketa",
+	"md_comments.comments_template.revert_change.value": "Leheneratu aldaketa",
+	"md_comments.comments_template.suggested_change_from": "Proposatutako aldaketa \"{{changeFrom}}\"-(e)tik \"{{changeTo}}\"-(e)ra",
+	"md_comments.comments_template.suggest_change_from": "Proposatu aldaketa \"{{changeFrom}}\"(e)tik hurrengo honetara:",
+	"md_comments.comments_template.to": "Ondorengoa",
+	"md_comments.comments_template.include_suggestion": "Gehitu proposatutako aldaketak",
+	"md_comments.comments_template.comment.value": "Iruzkina",
+	"md_comments.comments_template.cancel.value": "Utzi",
+	"md_comments.comments_template.reply.value": "Erantzun",
+	"md_comments.comments_template.reply.placeholder": "Erantzun",
+	"md_comments.comments_template.edit_comment.save": "gorde",
+	"md_comments.comments_template.edit_comment.cancel": "utzi",
+	"md_comments.error.edit_unauth": "Ezin dituzu beste erabiltzaileen iruzkinak editatu!",
+	"md_comments.error.delete_unauth": "Ezin dituzu beste erabiltzaileen iruzkinak ezabatu!"
+}

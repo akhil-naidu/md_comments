@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yardom78"
+		]
+	},
+	"md_comments.comment": "Komentár",
+	"md_comments.comments": "Komentáre",
+	"md_comments.add_comment.title": "Pridať nový komentár",
+	"md_comments.add_comment": "Pridať nový komentár",
+	"md_comments.add_comment.hint": "Prosím vyberte text na komentár",
+	"md_comments.delete_comment.title": "Vymazať tento komentár",
+	"md_comments.edit_comment.title": "Upraviť tento komentár",
+	"md_comments.show_comments": "Zobraziť komentáre",
+	"md_comments.comments_template.suggested_change": "Navrhovaná zmena",
+	"md_comments.comments_template.from": "Od",
+	"md_comments.comments_template.accept_change.value": "Súhlasiť so zmenou",
+	"md_comments.comments_template.revert_change.value": "Vrátiť zmenu späť",
+	"md_comments.comments_template.suggested_change_from": "Navrhované zmeny od \"{{changeFrom}}\" do \"{{changeTo}}\"",
+	"md_comments.comments_template.suggest_change_from": "Navrhnúť zmeny od \"{{changeFrom}}\" do",
+	"md_comments.comments_template.to": "Komu",
+	"md_comments.comments_template.include_suggestion": "Zahrnúť navrhovanú zmenu",
+	"md_comments.comments_template.comment.value": "Komentár",
+	"md_comments.comments_template.cancel.value": "Zrušiť",
+	"md_comments.comments_template.reply.value": "Odpovedať",
+	"md_comments.comments_template.reply.placeholder": "Odpovedať",
+	"md_comments.comments_template.edit_comment.save": "uložiť",
+	"md_comments.comments_template.edit_comment.cancel": "zrušiť",
+	"md_comments.error.edit_unauth": "Nemôžete upravovať komentáre iných používateľov!",
+	"md_comments.error.delete_unauth": "Nemôžete vymazať komentáre iných používateľov!"
+}

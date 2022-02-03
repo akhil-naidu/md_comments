@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"md_comments.comment": "Коментар",
+	"md_comments.comments": "Коментари",
+	"md_comments.add_comment.title": "Дај нов коментар за избраното",
+	"md_comments.add_comment": "Дај нов коментар на избраното",
+	"md_comments.add_comment.hint": "Најпрвин изберете текст за коментирање",
+	"md_comments.delete_comment.title": "Избриши го коментаров",
+	"md_comments.edit_comment.title": "Измени го коментаров",
+	"md_comments.show_comments": "Прикажи коментари",
+	"md_comments.comments_template.suggested_change": "Предложена промена",
+	"md_comments.comments_template.from": "Од",
+	"md_comments.comments_template.accept_change.value": "Прифати промена",
+	"md_comments.comments_template.revert_change.value": "Отповикај промена",
+	"md_comments.comments_template.suggested_change_from": "Предложена промена од „{{changeFrom}}“ во „{{changeTo}}“",
+	"md_comments.comments_template.suggest_change_from": "Предложена промена од „{{changeFrom}}“ во",
+	"md_comments.comments_template.to": "На",
+	"md_comments.comments_template.include_suggestion": "Вклучи предложена промена",
+	"md_comments.comments_template.comment.value": "Коментирај",
+	"md_comments.comments_template.cancel.value": "Откажи",
+	"md_comments.comments_template.reply.value": "Одговори",
+	"md_comments.comments_template.reply.placeholder": "Одговори",
+	"md_comments.comments_template.edit_comment.save": "зачувај",
+	"md_comments.comments_template.edit_comment.cancel": "откажи",
+	"md_comments.error.edit_unauth": "Не можеда те менувате туѓи коментари!",
+	"md_comments.error.delete_unauth": "Не можете да бришете туѓи коментари!"
+}

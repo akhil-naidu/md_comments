@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf",
+			"Beta16"
+		]
+	},
+	"md_comments.comment": "Commento",
+	"md_comments.comments": "Commenti",
+	"md_comments.add_comment.title": "Aggiungi nuovo commento sulla selezione",
+	"md_comments.add_comment": "Aggiungi nuovo commento sulla selezione",
+	"md_comments.add_comment.hint": "Devi prima selezionare un testo su cui aggiungere il commento!",
+	"md_comments.delete_comment.title": "Cancella questo commento",
+	"md_comments.edit_comment.title": "Modifica questo commento",
+	"md_comments.show_comments": "Visualizza commenti",
+	"md_comments.comments_template.suggested_change": "Modifica suggerita",
+	"md_comments.comments_template.from": "Da",
+	"md_comments.comments_template.accept_change.value": "Accetta modifica",
+	"md_comments.comments_template.revert_change.value": "Annulla modifica",
+	"md_comments.comments_template.suggested_change_from": "Modifica suggerita da \"{{changeFrom}}\" a \"{{changeTo}}\"",
+	"md_comments.comments_template.suggest_change_from": "Suggerisci modifica da \"{{changeFrom}}\" a",
+	"md_comments.comments_template.to": "A",
+	"md_comments.comments_template.include_suggestion": "Suggerisci modfica",
+	"md_comments.comments_template.comment.value": "Commenta",
+	"md_comments.comments_template.cancel.value": "Annulla",
+	"md_comments.comments_template.reply.value": "Rispondi",
+	"md_comments.comments_template.reply.placeholder": "Rispondi",
+	"md_comments.comments_template.edit_comment.save": "salva",
+	"md_comments.comments_template.edit_comment.cancel": "Cancella",
+	"md_comments.error.edit_unauth": "Non puoi modificare i commenti di altri autori!",
+	"md_comments.error.delete_unauth": "Non puoi eliminare i commenti di altri autori!"
+}

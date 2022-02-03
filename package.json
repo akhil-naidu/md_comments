@@ -1,0 +1,56 @@
+{
+  "author": {
+    "name": "Akhil Naidu",
+    "email": "kaparapu.akhilnaidu@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/akhil-naidu/md_comments/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "formidable": "^1.2.2",
+    "underscore": "^1.13.1"
+  },
+  "deprecated": false,
+  "description": "Adds comments on sidebar and link it to the text",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-etherpad": "^2.0.2",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-mocha": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.12.0",
+    "socket.io-client": "^2.3.0",
+    "superagent": "^6.1.0"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": "etherpad/plugin",
+    "ignorePatterns": [
+      "/static/js/jquery.tmpl.min.js",
+      "/static/js/moment-with-locales.min.js"
+    ]
+  },
+  "homepage": "https://github.com/akhil-naidu/md_comments#readme",
+  "license": "Apache-2.0",
+  "name": "md_comments",
+  "peerDependencies": {
+    "md_mudoc-lite": ">=0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhil-naidu/md_comments.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "version": "0.0.2"
+}

@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"Adignyoke",
+			"Akakiiri",
+			"Akoonaba",
+			"Amoramah"
+		]
+	},
+	"md_comments.comment": "Fu yelisum",
+	"md_comments.comments": "Lebesegɔ",
+	"md_comments.add_comment.title": "Pa'asɛ putɛpaalɛ loisego zuo",
+	"md_comments.add_comment": "Pa'asɛ yelesum paalega bo fu loorɛ",
+	"md_comments.add_comment.hint": "Zaam zaam loe gɔleseko ti fu yeti fu pa'asɛ la yia",
+	"md_comments.delete_comment.title": "Yesi lebesegɔ wã basɛ",
+	"md_comments.edit_comment.title": "Demese sɔsekãna wa",
+	"md_comments.show_comments": "Pa'ale fu yelesum",
+	"md_comments.comments_template.suggested_change": "Pa'asɛ putɛ̃'ɛrɛ tee",
+	"md_comments.comments_template.from": "Ze'ele",
+	"md_comments.comments_template.accept_change.value": "Sakɛ Teerɛ",
+	"md_comments.comments_template.revert_change.value": "Lebege tee",
+	"md_comments.comments_template.suggested_change_from": "Puti'irɛ teere ze'ele\"{{tee ze'ele}}\" bo \"{{ tee bo}}\"",
+	"md_comments.comments_template.suggest_change_from": "Pa'asɛ putɛ̃'ɛrɛ teere ze'ele{{ teere ze'ele}}",
+	"md_comments.comments_template.to": "Wɛ̃",
+	"md_comments.comments_template.include_suggestion": "Pa'asɛ putɛ̃'ɛrɛ teere",
+	"md_comments.comments_template.comment.value": "Lebese",
+	"md_comments.comments_template.cancel.value": "Sanbasɛ",
+	"md_comments.comments_template.reply.value": "Lerege",
+	"md_comments.comments_template.reply.placeholder": "Lerege",
+	"md_comments.comments_template.edit_comment.save": "Seefe",
+	"md_comments.comments_template.edit_comment.cancel": "Saabasɛ",
+	"md_comments.error.edit_unauth": "Fu kan ta'am demese se'em sɔsega",
+	"md_comments.error.delete_unauth": "Fu kanta'am saalum basɛba putɛra basɛ"
+}

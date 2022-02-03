@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jeeputer"
+		]
+	},
+	"md_comments.comment": "توضیح",
+	"md_comments.comments": "نظرات",
+	"md_comments.add_comment": "افزودن توضیح تازه برای منتخب‌ها",
+	"md_comments.delete_comment.title": "حذف این نظر",
+	"md_comments.edit_comment.title": "ویرایش این نظر",
+	"md_comments.show_comments": "نمایش نظرات",
+	"md_comments.comments_template.suggested_change": "تغییر پیشنهادی",
+	"md_comments.comments_template.from": "از",
+	"md_comments.comments_template.accept_change.value": "پذیرفتن تغییر",
+	"md_comments.comments_template.revert_change.value": "واگردانی تغییر",
+	"md_comments.comments_template.suggested_change_from": "تغییر پیسنهادی از «{{changeFrom}}» به «{{changeTo}}»",
+	"md_comments.comments_template.suggest_change_from": "تغییر پیشنهاد از «{{changeFrom}}» به",
+	"md_comments.comments_template.to": "به",
+	"md_comments.comments_template.include_suggestion": "گنجاندن تغییر پیشنهادی",
+	"md_comments.comments_template.comment.value": "نظر",
+	"md_comments.comments_template.cancel.value": "لغو",
+	"md_comments.comments_template.reply.value": "پاسخ",
+	"md_comments.comments_template.reply.placeholder": "پاسخ",
+	"md_comments.comments_template.edit_comment.save": "ذخیره",
+	"md_comments.comments_template.edit_comment.cancel": "لغو",
+	"md_comments.error.edit_unauth": "نمی‌توانید نظرات کاربران دیگر را ویرایش کنید!",
+	"md_comments.error.delete_unauth": "نمی‌توانید نظرات کاربران دیگر را حذف کنید!"
+}

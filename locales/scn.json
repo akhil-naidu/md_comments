@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"md_comments.comment": "Cummentu",
+	"md_comments.comments": "Cummenti",
+	"md_comments.delete_comment.title": "Cancella stu cummento",
+	"md_comments.edit_comment.title": "Cancia stu cummentu",
+	"md_comments.show_comments": "Ammustra cummenti",
+	"md_comments.comments_template.comment.value": "Cummentu",
+	"md_comments.comments_template.cancel.value": "Annulla",
+	"md_comments.comments_template.edit_comment.save": "sarva",
+	"md_comments.comments_template.edit_comment.cancel": "annulla"
+}

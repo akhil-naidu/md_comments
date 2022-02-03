@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"JSantos",
+			"Joao Xavier"
+		]
+	},
+	"md_comments.comment": "Komento",
+	"md_comments.comments": "Komenti",
+	"md_comments.add_comment.title": "Adjuntez nova komento en l'areo selektita",
+	"md_comments.add_comment": "Adjuntez nova komento en l'areo selektita",
+	"md_comments.add_comment.hint": "Selektez l'unesma texto por komentar",
+	"md_comments.delete_comment.title": "Efacar ca komento",
+	"md_comments.edit_comment.title": "Redaktar ca komento",
+	"md_comments.show_comments": "Montrar komenti",
+	"md_comments.comments_template.suggested_change": "Sugestita modifikuro",
+	"md_comments.comments_template.from": "De",
+	"md_comments.comments_template.accept_change.value": "Aceptar modifikuro",
+	"md_comments.comments_template.revert_change.value": "Desfacar modifikuro",
+	"md_comments.comments_template.suggested_change_from": "Sugestita modifikuro de \"{{changeFrom}}\" a \"{{changeTo}}\"",
+	"md_comments.comments_template.suggest_change_from": "Modifikuro sugestita de \"{{changeFrom}}\" a",
+	"md_comments.comments_template.to": "A",
+	"md_comments.comments_template.include_suggestion": "Inkluzez chanjo propozata",
+	"md_comments.comments_template.comment.value": "Komento",
+	"md_comments.comments_template.cancel.value": "Desfacar",
+	"md_comments.comments_template.reply.value": "Respondar",
+	"md_comments.comments_template.reply.placeholder": "Respondo",
+	"md_comments.comments_template.edit_comment.save": "konservez",
+	"md_comments.comments_template.edit_comment.cancel": "desfacar",
+	"md_comments.error.edit_unauth": "Vu ne povas redaktar la komenti di altriǃ",
+	"md_comments.error.delete_unauth": "Vu ne povas efakar la komenti di altriǃ"
+}

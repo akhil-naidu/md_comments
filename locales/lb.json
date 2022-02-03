@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"md_comments.comment": "Bemierkung",
+	"md_comments.comments": "Bemierkungen",
+	"md_comments.delete_comment.title": "Dës Bemierkung läschen",
+	"md_comments.edit_comment.title": "Dës Bemierkung änneren",
+	"md_comments.show_comments": "Bemierkunge weisen",
+	"md_comments.comments_template.suggested_change": "Proposéiert Ännerung",
+	"md_comments.comments_template.from": "Vum",
+	"md_comments.comments_template.accept_change.value": "Ännerung akzeptéieren",
+	"md_comments.comments_template.revert_change.value": "Ännerung zrécksetzen",
+	"md_comments.comments_template.to": "Fir",
+	"md_comments.comments_template.comment.value": "Bemierkung",
+	"md_comments.comments_template.cancel.value": "Ofbriechen",
+	"md_comments.comments_template.reply.value": "Äntweren",
+	"md_comments.comments_template.reply.placeholder": "Äntweren",
+	"md_comments.comments_template.edit_comment.save": "späicheren",
+	"md_comments.comments_template.edit_comment.cancel": "ofbriechen",
+	"md_comments.error.edit_unauth": "Dir kënnt d'Bemierkunge vun anere Benotzer net änneren",
+	"md_comments.error.delete_unauth": "Dir kënnt d'Bemierkunge vun anere Benotzer net läschen!"
+}

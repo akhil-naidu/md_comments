@@ -1,0 +1,31 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"md_comments.comment": "הערה",
+	"md_comments.comments": "הערות",
+	"md_comments.add_comment.title": "הוספת הערה חדשה לבחירה",
+	"md_comments.add_comment": "הוספת הערה חדשה לבחירה",
+	"md_comments.add_comment.hint": "נא לבחור קודם טקסט כדי להעיר",
+	"md_comments.delete_comment.title": "למחוק את ההערה הזאת",
+	"md_comments.edit_comment.title": "לערוך את ההערה הזאת",
+	"md_comments.show_comments": "הצגת ההערה",
+	"md_comments.comments_template.suggested_change": "שינוי מוצע",
+	"md_comments.comments_template.from": "מאת",
+	"md_comments.comments_template.accept_change.value": "קבלת השינוי",
+	"md_comments.comments_template.revert_change.value": "שחזור השינוי",
+	"md_comments.comments_template.suggested_change_from": "שינוי מוצע מהטקסט \"{{changeFrom}}\" לטקסט \"{{changeTo}}\"",
+	"md_comments.comments_template.suggest_change_from": "להציע שינוי של הטקסט \"{{changeFrom}}\" לטקסט",
+	"md_comments.comments_template.to": "לטקסט",
+	"md_comments.comments_template.include_suggestion": "לכלול את השינוי המוצע",
+	"md_comments.comments_template.comment.value": "הערה",
+	"md_comments.comments_template.cancel.value": "ביטול",
+	"md_comments.comments_template.reply.value": "להשיב",
+	"md_comments.comments_template.reply.placeholder": "להשיב",
+	"md_comments.comments_template.edit_comment.save": "שמירה",
+	"md_comments.comments_template.edit_comment.cancel": "ביטול",
+	"md_comments.error.edit_unauth": "אין לך אפשרות לערוך הערות של משתמשים אחרים!",
+	"md_comments.error.delete_unauth": "אין לך אפשרות למחוק הערות של משתמשים אחרים!"
+}

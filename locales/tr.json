@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Can",
+			"Erdemkose",
+			"Hedda"
+		]
+	},
+	"md_comments.comment": "Yorum",
+	"md_comments.comments": "Yorumlar",
+	"md_comments.add_comment.title": "Seçime yeni yorum ekle",
+	"md_comments.add_comment": "Seçime yeni yorum ekle",
+	"md_comments.add_comment.hint": "Lütfen önce yorum yapılacak metni seçin",
+	"md_comments.delete_comment.title": "Bu yorumu sil",
+	"md_comments.edit_comment.title": "Bu yorumu düzenle",
+	"md_comments.show_comments": "Yorumları göster",
+	"md_comments.comments_template.suggested_change": "Önerilen Değişiklik",
+	"md_comments.comments_template.from": "Gönderen",
+	"md_comments.comments_template.accept_change.value": "Değişikliği Kabul Et",
+	"md_comments.comments_template.revert_change.value": "Değişikliği Geri Al",
+	"md_comments.comments_template.suggested_change_from": "\"{{changeFrom}}\"'dan/den, {{changeTo}}'ye/ya önerilen değişiklik",
+	"md_comments.comments_template.suggest_change_from": "\"{{changeFrom}}\"'den/dan şuraya önerilen değişiklik",
+	"md_comments.comments_template.to": "Alıcı",
+	"md_comments.comments_template.include_suggestion": "Önerilen değişikliği dahil et",
+	"md_comments.comments_template.comment.value": "Yorum",
+	"md_comments.comments_template.cancel.value": "İptal",
+	"md_comments.comments_template.reply.value": "Yanıtla",
+	"md_comments.comments_template.reply.placeholder": "Yanıtla",
+	"md_comments.comments_template.edit_comment.save": "kaydet",
+	"md_comments.comments_template.edit_comment.cancel": "iptal",
+	"md_comments.error.edit_unauth": "Diğer kullanıcıların yorumlarını düzenleyemezsiniz!",
+	"md_comments.error.delete_unauth": "Diğer kullanıcıların yorumlarını silemezsiniz!"
+}

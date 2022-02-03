@@ -1,0 +1,36 @@
+{
+  "parts": [
+    {
+      "name":"comments",
+      "pre": ["md_mudoc-lite/webaccess", "md_page_view/page_view"],
+      "post": ["md_mudoc-lite/static"],
+      "client_hooks": {
+        "postToolbarInit": "md_comments/static/js/index",
+        "postAceInit": "md_comments/static/js/index",
+        "collectContentPre": "md_comments/static/js/shared",
+        "aceAttribsToClasses": "md_comments/static/js/index",
+        "aceEditorCSS": "md_comments/static/js/index",
+        "aceEditEvent": "md_comments/static/js/index",
+        "aceInitialized": "md_comments/static/js/index"
+      },
+      "hooks": {
+        "padInitToolbar": "md_comments/index",
+        "padRemove": "md_comments/index",
+        "padCopy": "md_comments/index",
+        "socketio": "md_comments/index",
+        "expressCreateServer": "md_comments/index",
+        "collectContentPre": "md_comments/static/js/shared",
+        "eejsBlock_editbarMenuLeft": "md_comments/index",
+        "eejsBlock_scripts": "md_comments/index",
+        "eejsBlock_mySettings": "md_comments/index",
+        "eejsBlock_styles": "md_comments/index",
+        "clientVars": "md_comments/index",
+        "exportHtmlAdditionalTagsWithData": "md_comments/exportHTML",
+        "getLineHTMLForExport": "md_comments/exportHTML",
+        "exportMuDocAdditionalContent": "md_comments/index",
+        "exportHTMLAdditionalContent": "md_comments/exportHTML",
+        "handleMessageSecurity": "md_comments/index"
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Quentí"
+		]
+	},
+	"md_comments.comment": "Comentari",
+	"md_comments.comments": "Comentaris",
+	"md_comments.add_comment.title": "Apondre un comentari novèl sus la seleccion",
+	"md_comments.comments_template.accept_change.value": "Acceptar la modificacion",
+	"md_comments.comments_template.cancel.value": "Anullar",
+	"md_comments.comments_template.reply.value": "Respondre",
+	"md_comments.comments_template.edit_comment.save": "enregistrar",
+	"md_comments.comments_template.edit_comment.cancel": "anullar"
+}
