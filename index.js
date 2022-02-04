@@ -29,7 +29,7 @@ exports.padCopy = async (hookName, context) => {
   ]);
 };
 
-exports.handleMessageSecurity = async (hookName, {message, client: socket}) => {
+exports.handleMessageSecurity = async (hookName, {message, socket}) => {
   const {type: mtype, data: {type: dtype, apool, changeset} = {}} = message;
   if (mtype !== 'COLLABROOM') return;
   if (dtype !== 'USER_CHANGES') return;

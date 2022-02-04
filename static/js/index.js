@@ -38,7 +38,7 @@ const parseMultiline = (text) => {
  ******************************************************************** */
 
 // Container
-const EpComments = function (context) {
+const MdComments = function (context) {
   this.container = null;
   this.padOuter = null;
   this.padInner = null;
@@ -65,7 +65,7 @@ const EpComments = function (context) {
 };
 
 // Init MuDoc plugin comment pads
-EpComments.prototype.init = async function () {
+MdComments.prototype.init = async function () {
   const self = this;
   moment.locale(html10n.getLanguage());
 
@@ -374,14 +374,14 @@ EpComments.prototype.init = async function () {
   }
 };
 
-EpComments.prototype.findCommentText = function ($commentBox) {
+MdComments.prototype.findCommentText = function ($commentBox) {
   const isReply = $commentBox.hasClass('sidebar-comment-reply');
   if (isReply) return $commentBox.find('.comment-text');
   return $commentBox.find('.compact-display-content .comment-text, ' +
                           '.full-display-content .comment-title-wrapper .comment-text');
 };
 // This function is useful to collect new comments on the collaborators
-EpComments.prototype.collectCommentsAfterSomeIntervalsOfTime = async function () {
+MdComments.prototype.collectCommentsAfterSomeIntervalsOfTime = async function () {
   await new Promise((resolve) => window.setTimeout(resolve, 300));
   this.collectComments();
 
@@ -409,7 +409,7 @@ EpComments.prototype.collectCommentsAfterSomeIntervalsOfTime = async function ()
 };
 
 // Insert comments container on element use for linenumbers
-EpComments.prototype.findContainers = function () {
+MdComments.prototype.findContainers = function () {
   const padOuter = $('iframe[name="ace_outer"]').contents();
   this.padOuter = padOuter;
   this.padInner = padOuter.find('iframe[name="ace_inner"]');
@@ -417,7 +417,7 @@ EpComments.prototype.findContainers = function () {
 };
 
 // Collect Comments and link text content to the comments div
-EpComments.prototype.collectComments = function (callback) {
+MdComments.prototype.collectComments = function (callback) {
   const self = this;
   const container = this.container;
   const comments = this.comments;
@@ -502,7 +502,7 @@ EpComments.prototype.collectComments = function (callback) {
   if (callback) callback();
 };
 
-EpComments.prototype.addListenersToCloseOpenedComment = function () {
+MdComments.prototype.addListenersToCloseOpenedComment = function () {
   // we need to add listeners to the different iframes of the page
   $(document).on('touchstart click', (e) => {
     this.closeOpenedCommentIfNotOnSelectedElements(e);
@@ -516,13 +516,13 @@ EpComments.prototype.addListenersToCloseOpenedComment = function () {
 };
 
 // Close comment that is opened
-EpComments.prototype.closeOpenedComment = function (e) {
+MdComments.prototype.closeOpenedComment = function (e) {
   const commentId = this.commentIdOf(e);
   commentBoxes.hideComment(commentId);
 };
 
 // Close comment if event target was outside of comment or on a comment icon
-EpComments.prototype.closeOpenedCommentIfNotOnSelectedElements = function (e) {
+MdComments.prototype.closeOpenedCommentIfNotOnSelectedElements = function (e) {
   // Don't do anything if clicked on the allowed elements:
   // any of the comment icons
   if (commentIcons.shouldNotCloseComment(e) || commentBoxes.shouldNotCloseComment(e)) return;
@@ -531,7 +531,7 @@ EpComments.prototype.closeOpenedCommentIfNotOnSelectedElements = function (e) {
 };
 
 // Collect Comments and link text content to the comments div
-EpComments.prototype.collectCommentReplies = function (callback) {
+MdComments.prototype.collectCommentReplies = function (callback) {
   $.each(this.commentReplies, (replyId, reply) => {
     const commentId = reply.commentId;
     if (commentId) {
@@ -559,7 +559,7 @@ EpComments.prototype.collectCommentReplies = function (callback) {
   });
 };
 
-EpComments.prototype.commentIdOf = function (e) {
+MdComments.prototype.commentIdOf = function (e) {
   const cls = e.currentTarget.classList;
   const classCommentId = /(?:^| )(c-[A-Za-z0-9]*)/.exec(cls);
 
@@ -567,7 +567,7 @@ EpComments.prototype.commentIdOf = function (e) {
 };
 
 // Insert comment container in sidebar
-EpComments.prototype.insertContainers = function () {
+MdComments.prototype.insertContainers = function () {
   const target = $('iframe[name="ace_outer"]').contents().find('#outerdocbody');
 
   // Create hover modal
@@ -582,7 +582,7 @@ EpComments.prototype.insertContainers = function () {
 };
 
 // Insert a comment node
-EpComments.prototype.insertComment = function (commentId, comment, index) {
+MdComments.prototype.insertComment = function (commentId, comment, index) {
   let content = null;
   const container = this.container;
   const commentAfterIndex = container.find('.sidebar-comment').eq(index);
@@ -610,7 +610,7 @@ EpComments.prototype.insertComment = function (commentId, comment, index) {
 };
 
 // Set all comments to be inline with their target REP
-EpComments.prototype.setYofComments = function () {
+MdComments.prototype.setYofComments = function () {
   // for each comment in the pad
   const padOuter = $('iframe[name="ace_outer"]').contents();
   const padInner = padOuter.find('iframe[name="ace_inner"]');
@@ -644,7 +644,7 @@ EpComments.prototype.setYofComments = function () {
   });
 };
 
-EpComments.prototype.getFirstOcurrenceOfCommentIds = function () {
+MdComments.prototype.getFirstOcurrenceOfCommentIds = function () {
   const padOuter = $('iframe[name="ace_outer"]').contents();
   const padInner = padOuter.find('iframe[name="ace_inner"]').contents();
   const commentsId = this.getUniqueCommentsId(padInner);
@@ -653,7 +653,7 @@ EpComments.prototype.getFirstOcurrenceOfCommentIds = function () {
   return firstOcurrenceOfCommentIds;
 };
 
-EpComments.prototype.getUniqueCommentsId = function (padInner) {
+MdComments.prototype.getUniqueCommentsId = function (padInner) {
   const inlineComments = padInner.find('.comment');
   const commentsId = _.map(inlineComments, (inlineComment) => {
     const commentId = /(?:^| )(c-[A-Za-z0-9]*)/.exec(inlineComment.className);
@@ -666,7 +666,7 @@ EpComments.prototype.getUniqueCommentsId = function (padInner) {
 
 // Indicates if all comments are on the correct Y position, and don't need to
 // be adjusted
-EpComments.prototype.allCommentsOnCorrectYPosition = function () {
+MdComments.prototype.allCommentsOnCorrectYPosition = function () {
   // for each comment in the pad
   const padOuter = $('iframe[name="ace_outer"]').contents();
   const padInner = padOuter.find('iframe[name="ace_inner"]');
@@ -687,7 +687,7 @@ EpComments.prototype.allCommentsOnCorrectYPosition = function () {
   return allCommentsAreCorrect;
 };
 
-EpComments.prototype.localizeExistingComments = function () {
+MdComments.prototype.localizeExistingComments = function () {
   const self = this;
   const padComments = this.padInner.contents().find('.comment');
   const comments = this.comments;
@@ -713,14 +713,14 @@ EpComments.prototype.localizeExistingComments = function () {
 };
 
 // Set comments content data
-EpComments.prototype.setComments = function (comments) {
+MdComments.prototype.setComments = function (comments) {
   for (const [commentId, comment] of Object.entries(comments)) {
     this.setComment(commentId, comment);
   }
 };
 
 // Set comment data
-EpComments.prototype.setComment = function (commentId, comment) {
+MdComments.prototype.setComment = function (commentId, comment) {
   const comments = this.comments;
   comment.date = moment(comment.timestamp).fromNow();
   comment.formattedDate = new Date(comment.timestamp).toISOString();
@@ -731,14 +731,14 @@ EpComments.prototype.setComment = function (commentId, comment) {
 
 // commentReply = ['c-reply-123', commentDataObject]
 // commentDataObject = {author:..., name:..., text:..., ...}
-EpComments.prototype.setCommentReply = function (commentReply) {
+MdComments.prototype.setCommentReply = function (commentReply) {
   const commentReplies = this.commentReplies;
   const replyId = commentReply[0];
   commentReplies[replyId] = commentReply[1];
 };
 
 // set the text of the comment or comment reply
-EpComments.prototype.setCommentOrReplyNewText = function (commentOrReplyId, text) {
+MdComments.prototype.setCommentOrReplyNewText = function (commentOrReplyId, text) {
   if (this.comments[commentOrReplyId]) {
     this.comments[commentOrReplyId].data.text = text;
   } else if (this.commentReplies[commentOrReplyId]) {
@@ -746,7 +746,7 @@ EpComments.prototype.setCommentOrReplyNewText = function (commentOrReplyId, text
   }
 };
 
-EpComments.prototype._send = async function (type, ...args) {
+MdComments.prototype._send = async function (type, ...args) {
   return await new Promise((resolve, reject) => {
     this.socket.emit(type, ...args, (errj, val) => {
       if (errj != null) return reject(Object.assign(new Error(errj.message), {name: errj.name}));
@@ -756,16 +756,16 @@ EpComments.prototype._send = async function (type, ...args) {
 };
 
 // Get all comments
-EpComments.prototype.getComments = async function () {
+MdComments.prototype.getComments = async function () {
   return (await this._send('getComments', {padId: this.padId})).comments;
 };
 
 // Get all comment replies
-EpComments.prototype.getCommentReplies = async function () {
+MdComments.prototype.getCommentReplies = async function () {
   return (await this._send('getCommentReplies', {padId: this.padId})).replies;
 };
 
-EpComments.prototype.getCommentData = function () {
+MdComments.prototype.getCommentData = function () {
   const data = {};
 
   // Insert comment data
@@ -784,7 +784,7 @@ EpComments.prototype.getCommentData = function () {
 };
 
 // Delete a pad comment
-EpComments.prototype.deleteComment = function (commentId) {
+MdComments.prototype.deleteComment = function (commentId) {
   $('iframe[name="ace_outer"]').contents().find(`#${commentId}`).remove();
 };
 
@@ -869,7 +869,7 @@ const getXYOffsetOfRep = (rep) => {
   }
 };
 
-EpComments.prototype.displayNewCommentForm = function () {
+MdComments.prototype.displayNewCommentForm = function () {
   const rep = {};
   const ace = this.ace;
 
@@ -915,7 +915,7 @@ EpComments.prototype.displayNewCommentForm = function () {
   $('#newComment').find('.comment-content').focus();
 };
 
-EpComments.prototype.scrollViewportIfSelectedTextIsNotVisible = function ($firstSelectedElement) {
+MdComments.prototype.scrollViewportIfSelectedTextIsNotVisible = function ($firstSelectedElement) {
   // Set the top of the form to be the same Y as the target Rep
   const y = $firstSelectedElement.offsetTop;
   const padOuter = $('iframe[name="ace_outer"]').contents();
@@ -923,7 +923,7 @@ EpComments.prototype.scrollViewportIfSelectedTextIsNotVisible = function ($first
   padOuter.find('#outerdocbody').parent().scrollTop(y); // Works in Firefox
 };
 
-EpComments.prototype.isElementInViewport = function (element) {
+MdComments.prototype.isElementInViewport = function (element) {
   const elementPosition = element.getBoundingClientRect();
   const outerdocbody = $('iframe[name="ace_outer"]').contents().find('#outerdocbody');
   const scrolltop = (outerdocbody.scrollTop() ||
@@ -945,12 +945,12 @@ EpComments.prototype.isElementInViewport = function (element) {
   return !(elementAboveViewportTop || elementBelowViewportBottom);
 };
 
-EpComments.prototype.getIntValueOfCSSProperty = function ($element, property) {
+MdComments.prototype.getIntValueOfCSSProperty = function ($element, property) {
   const valueString = $element.css(property);
   return parseInt(valueString) || 0;
 };
 
-EpComments.prototype.getFirstElementSelected = function () {
+MdComments.prototype.getFirstElementSelected = function () {
   let element;
 
   this.ace.callWithAce((ace) => {
@@ -966,7 +966,7 @@ EpComments.prototype.getFirstElementSelected = function () {
 };
 
 // Indicates if user selected some text on editor
-EpComments.prototype.checkNoTextSelected = function (rep) {
+MdComments.prototype.checkNoTextSelected = function (rep) {
   const noTextSelected = ((rep.selStart[0] === rep.selEnd[0]) &&
                           (rep.selStart[1] === rep.selEnd[1]));
 
@@ -974,7 +974,7 @@ EpComments.prototype.checkNoTextSelected = function (rep) {
 };
 
 // Create form to add comment
-EpComments.prototype.createNewCommentFormIfDontExist = function (rep) {
+MdComments.prototype.createNewCommentFormIfDontExist = function (rep) {
   const data = this.getCommentData();
 
   // If a new comment box doesn't already exist, create one
@@ -991,7 +991,7 @@ EpComments.prototype.createNewCommentFormIfDontExist = function (rep) {
 };
 
 // Get a string representation of the text selected on the editor
-EpComments.prototype.getSelectedText = function (rep) {
+MdComments.prototype.getSelectedText = function (rep) {
   // The selection representation looks like this if it starts with the fifth character in the
   // second line and ends at (but does not include) the third character in the eighth line:
   //     rep.selStart = [1, 4]; // 2nd line 5th char
@@ -1018,7 +1018,7 @@ EpComments.prototype.getSelectedText = function (rep) {
   return selectedTextLines.join('\n');
 };
 
-EpComments.prototype.getLastLine = function (firstLine, rep) {
+MdComments.prototype.getLastLine = function (firstLine, rep) {
   let lastLineSelected = rep.selEnd[0];
 
   if (lastLineSelected > firstLine) {
@@ -1030,7 +1030,7 @@ EpComments.prototype.getLastLine = function (firstLine, rep) {
   return lastLineSelected;
 };
 
-EpComments.prototype.lastLineSelectedIsEmpty = function (rep, lastLineSelected) {
+MdComments.prototype.lastLineSelectedIsEmpty = function (rep, lastLineSelected) {
   const line = rep.lines.atIndex(lastLineSelected);
   // when we've a line with line attribute, the first char line position
   // in a line is 1 because of the *, otherwise is 0
@@ -1040,12 +1040,12 @@ EpComments.prototype.lastLineSelectedIsEmpty = function (rep, lastLineSelected) 
   return lastColumnSelected === firstCharLinePosition;
 };
 
-EpComments.prototype.lineHasMarker = function (line) {
+MdComments.prototype.lineHasMarker = function (line) {
   return line.lineMarker === 1;
 };
 
 // Save comment
-EpComments.prototype.saveComment = async function (data, rep) {
+MdComments.prototype.saveComment = async function (data, rep) {
   const res = await this._send('addComment', data);
   if (res == null) return;
   const [commentId, comment] = res;
@@ -1065,21 +1065,21 @@ EpComments.prototype.saveComment = async function (data, rep) {
 
 // commentData = {c-newCommentId123: data:{author:..., date:..., ...},
 //                c-newCommentId124: data:{...}}
-EpComments.prototype.saveCommentWithoutSelection = async function (padId, commentData) {
+MdComments.prototype.saveCommentWithoutSelection = async function (padId, commentData) {
   const data = this.buildComments(commentData);
   const comments = await this._send('bulkAddComment', padId, data);
   this.setComments(comments);
   this.shouldCollectComment = true;
 };
 
-EpComments.prototype.buildComments = function (commentsData) {
+MdComments.prototype.buildComments = function (commentsData) {
   const comments =
     _.map(commentsData, (commentData, commentId) => this.buildComment(commentId, commentData.data));
   return comments;
 };
 
 // commentData = {c-newCommentId123: data:{author:..., date:..., ...}, ...
-EpComments.prototype.buildComment = function (commentId, commentData) {
+MdComments.prototype.buildComment = function (commentId, commentData) {
   const data = {};
   data.padId = this.padId;
   data.commentId = commentId;
@@ -1092,12 +1092,12 @@ EpComments.prototype.buildComment = function (commentId, commentData) {
   return data;
 };
 
-EpComments.prototype.getMapfakeComments = function () {
+MdComments.prototype.getMapfakeComments = function () {
   return this.mapFakeComments;
 };
 
 // commentReplyData = {c-reply-123:{commentReplyData1}, c-reply-234:{commentReplyData1}, ...}
-EpComments.prototype.saveCommentReplies = async function (padId, commentReplyData) {
+MdComments.prototype.saveCommentReplies = async function (padId, commentReplyData) {
   const data = this.buildCommentReplies(commentReplyData);
   const replies = await this._send('bulkAddCommentReplies', padId, data);
   _.each(replies, (reply) => {
@@ -1106,13 +1106,13 @@ EpComments.prototype.saveCommentReplies = async function (padId, commentReplyDat
   this.shouldCollectComment = true; // force collect the comment replies saved
 };
 
-EpComments.prototype.buildCommentReplies = function (repliesData) {
+MdComments.prototype.buildCommentReplies = function (repliesData) {
   const replies = _.map(repliesData, (replyData) => this.buildCommentReply(replyData));
   return replies;
 };
 
 // take a replyData and add more fields necessary. E.g. 'padId'
-EpComments.prototype.buildCommentReply = function (replyData) {
+MdComments.prototype.buildCommentReply = function (replyData) {
   const data = {};
   data.padId = this.padId;
   data.commentId = replyData.commentId;
@@ -1127,7 +1127,7 @@ EpComments.prototype.buildCommentReply = function (replyData) {
 };
 
 // Listen for comment
-EpComments.prototype.commentListen = function () {
+MdComments.prototype.commentListen = function () {
   const socket = this.socket;
   socket.on('pushAddCommentInBulk', async () => {
     const allComments = await this.getComments();
@@ -1147,7 +1147,7 @@ EpComments.prototype.commentListen = function () {
 };
 
 // Listen for comment replies
-EpComments.prototype.commentRepliesListen = function () {
+MdComments.prototype.commentRepliesListen = function () {
   this.socket.on('pushAddCommentReply', async (replyId, reply) => {
     const replies = await this.getCommentReplies();
     if (!$.isEmptyObject(replies)) {
@@ -1157,13 +1157,13 @@ EpComments.prototype.commentRepliesListen = function () {
   });
 };
 
-EpComments.prototype.updateCommentBoxText = function (commentId, commentText) {
+MdComments.prototype.updateCommentBoxText = function (commentId, commentText) {
   const $comment = this.container.parent().find(`[data-commentid='${commentId}']`);
   const textBox = this.findCommentText($comment);
   textBox.text(commentText);
 };
 
-EpComments.prototype.showChangeAsAccepted = function (commentId) {
+MdComments.prototype.showChangeAsAccepted = function (commentId) {
   const self = this;
 
   // Get the comment
@@ -1181,14 +1181,14 @@ EpComments.prototype.showChangeAsAccepted = function (commentId) {
   comment.addClass('change-accepted');
 };
 
-EpComments.prototype.showChangeAsReverted = function (commentId) {
+MdComments.prototype.showChangeAsReverted = function (commentId) {
   // Get the comment
   const comment = this.container.parent().find(`[data-commentid='${commentId}']`);
   comment.removeClass('change-accepted');
 };
 
 // Push comment from collaborators
-EpComments.prototype.pushComment = function (eventType, callback) {
+MdComments.prototype.pushComment = function (eventType, callback) {
   const socket = this.socket;
 
   socket.on('textCommentUpdated', (commentId, commentText) => {
@@ -1228,7 +1228,7 @@ const hooks = {
   // Init pad comments
   postAceInit: (hookName, context, cb) => {
     if (!pad.plugins) pad.plugins = {};
-    const Comments = new EpComments(context);
+    const Comments = new MdComments(context);
     pad.plugins.md_comments = Comments;
 
     if (!$('#editorcontainerbox').hasClass('flex-layout')) {

@@ -1,7 +1,7 @@
 {
   "parts": [
     {
-      "name":"comments",
+      "name":"main",
       "pre": ["md_mudoc-lite/webaccess", "md_page_view/page_view"],
       "post": ["md_mudoc-lite/static"],
       "client_hooks": {
