@@ -39,7 +39,6 @@
     ]
   },
   "homepage": "https://github.com/akhil-naidu/md_comments#readme",
-  "license": "Apache-2.0",
   "name": "md_comments",
   "peerDependencies": {
     "md_mudoc-lite": ">=0.0.2"
@@ -52,5 +51,5 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
